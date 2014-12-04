@@ -5,7 +5,7 @@ require 'rails_admin/adapters/active_record/property'
 
 module RailsAdmin
   module Adapters
-    module ActiveRecord
+    module ActiveHash
       DISABLED_COLUMN_TYPES = [:tsvector, :blob, :binary, :spatial, :hstore, :geometry]
 
       def new(params = {})
