@@ -46,7 +46,7 @@ module RailsAdmin
       ancestors = model.ancestors.collect(&:to_s)
       if ancestors.include?('ActiveRecord::Base') && !model.abstract_class?
         initialize_active_record
-      elsif ancestors.include?('ActiveRecord::Base') && !model.abstract_class?
+      elsif ancestors.include?('ActiveHash::Base') && !model.abstract_class?
         initialize_active_hash
       elsif ancestors.include?('Mongoid::Document')
         initialize_mongoid
