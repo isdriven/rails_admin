@@ -41,6 +41,7 @@ module RailsAdmin
       end
     end
 
+
     def initialize(model_or_model_name)
       @model_name = model_or_model_name.to_s
       ancestors = model.ancestors.collect(&:to_s)
