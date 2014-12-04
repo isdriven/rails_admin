@@ -3,6 +3,7 @@ require 'rails_admin/adapters/active_record/abstract_object'
 require 'rails_admin/adapters/active_record/association'
 require 'rails_admin/adapters/active_record/property'
 
+
 module RailsAdmin
   module Adapters
     module ActiveHash
